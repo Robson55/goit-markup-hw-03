@@ -10,6 +10,7 @@
   --light-color: #f5f4fa;
   --white-color: #ffffff;
   --border-color: #eeeeee;
+  --border-second-color: #ececec;
 
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -22,6 +23,7 @@ body {
   color: var(--primary-text-color);
   width: 1600px;;
 }
+
 h1,
 h2,
 h3,
@@ -249,14 +251,16 @@ h6 {
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 94px;
-  padding: 0 15px;
-}
+ }
 
 .portfolio-list-items {
   border-color: var(--border-color);
   border-width: 1px;
   border-style: solid;
   box-sizing: border-box;
+  margin: 15px;
+  width: 370px;
+  height: 404px;
 }
 
 .button-list-item {
@@ -317,16 +321,6 @@ h6 {
 .portfolio-list-item-aplication {
   margin-left: 24px;
 }
-
-.portfolio-list-items {
-  margin: 5px;
-  width: 370px;
-  height: 404px;
-}
-
-/* .portfolio-list-items:not(:last-child) {
-  margin-right: 30px;
-} */
 
 .footer .container {
   padding: 60px 15px 0 15px;
