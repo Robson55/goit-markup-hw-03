@@ -20,6 +20,7 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
+  width: 1600px;;
 }
 h1,
 h2,
@@ -27,6 +28,11 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -46,6 +52,10 @@ h6 {
 .address {
   display: flex;
   align-items: center;
+}
+
+.address-tel {
+  margin-left: 50px;
 }
 
 .header-nav,
@@ -80,10 +90,18 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--primary-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+.logo-accent-studio {
+  color: var(--light-color);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .address-mail,
@@ -116,11 +134,14 @@ h6 {
   justify-content: center;
   line-height: 1.36;
   padding-top: 200px;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
   margin: auto;
 }
 
 .hero-h1-button {
+  width: 200px;
+  height: 50px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: var(--font-weight-bold);
@@ -148,6 +169,8 @@ h6 {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .advantages-list-item-header {
   font-weight: 700;
@@ -156,6 +179,20 @@ h6 {
 .advanteges-list-item-description {
   line-height: 1.71;
   color: var(--second-color);
+}
+
+.services-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.team {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.team-section {
+  background-color: var(--light-color)
 }
 
 .services-box,
@@ -169,6 +206,7 @@ h6 {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 94px;
 }
 
 .services-box-item {
@@ -180,15 +218,23 @@ h6 {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 94px;
 }
 
 .button-list {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .team-list-person-name {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-list-person-position {
+  margin-bottom: 30px;
 }
 
 .team-list-person {
@@ -201,18 +247,23 @@ h6 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  padding: 0 15px;
 }
 
 .portfolio-list-items {
   border-color: var(--border-color);
   border-width: 1px;
   border-style: solid;
+  box-sizing: border-box;
 }
 
 .button-list-item {
   color: var(--dark-color);
   font-weight: var(--font-weight-bold);
-  padding: 10px 41px;
+  font-size: 16px;
+  padding: 12px 22px;
   margin: 8px;
   border: 0;
   border-radius: 4px;
@@ -247,11 +298,19 @@ h6 {
 
 .footer-address {
   font-size: 14px;
-  color: var(--light-color)
+  color: var(--light-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .portfolio-list-item-description{
   font-weight: 700;
+  margin-top: 20px;
+}
+
+.portfolio-list-item-aplication {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .portfolio-list-item-description,
@@ -261,6 +320,16 @@ h6 {
 
 .portfolio-list-items {
   margin: 5px;
+  width: 370px;
+  height: 404px;
+}
+
+/* .portfolio-list-items:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.footer .container {
+  padding: 60px 15px 0 15px;
 }
 
 .footer{
@@ -275,4 +344,15 @@ h6 {
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+.footer-address-mail {
+  text-decoration: none;
+  color: var(--second-color);
+ }
+
+.footer-address-tel {
+  text-decoration: none;
+  color: var(--second-color);
+  margin-top: 9px;
 }
