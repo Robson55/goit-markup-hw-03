@@ -21,7 +21,8 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
-  width: 1600px;;
+  width: 100%;
+  ;
 }
 
 h1,
@@ -42,12 +43,13 @@ h6 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  /* padding: 0 15px; */
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  height: 80px;
+  padding: 24px 0;
 }
 
 .header-nav,
@@ -79,6 +81,7 @@ h6 {
   justify-content: flex-start;
   align-items: center;
 }
+
 .address {
   margin-left: auto;
   justify-content: flex-end;
@@ -93,6 +96,7 @@ h6 {
   color: var(--primary-color);
   text-decoration: none;
   margin-right: 93px;
+  font-family: var(--secondary-font);
 }
 
 .logo-accent {
@@ -104,6 +108,8 @@ h6 {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  font-family: var(--secondary-font);
 }
 
 .address-mail,
@@ -123,8 +129,11 @@ h6 {
 
 .hero {
   background: var(--dark-color);
-  width: 1600px;
-  height: 600px;
+  width: 100%;
+}
+
+.hero .container {
+  padding-bottom: 200px;
 }
 
 .hero-h1 {
@@ -136,14 +145,15 @@ h6 {
   justify-content: center;
   line-height: 1.36;
   padding-top: 200px;
-  /* align-items: center; */
+  align-items: center;
   text-align: center;
   margin: auto;
+  padding: 200px 252px 0;
+  /* margin-bottom: 280px; */
+
 }
 
 .hero-h1-button {
-  width: 200px;
-  height: 50px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: var(--font-weight-bold);
@@ -171,11 +181,11 @@ h6 {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
+
 .advantages-list-item-header {
   font-weight: 700;
+  font-style: var(--main-font)
 }
 
 .advanteges-list-item-description {
@@ -183,18 +193,21 @@ h6 {
   color: var(--second-color);
 }
 
-.services-box {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.section {
+  padding: 94px 0 0;
 }
 
 .team {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .team-section {
   background-color: var(--light-color)
+}
+
+.services-box {
+  padding-bottom: 50px;
 }
 
 .services-box,
@@ -207,20 +220,19 @@ h6 {
 .services-box-list {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin-bottom: 94px;
+  justify-content: space-between;
 }
 
 .services-box-item {
-  margin: 15px;
   padding: 0;
+  gap: 15px;
 }
 
 .team-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .button-list {
@@ -235,8 +247,10 @@ h6 {
   margin-bottom: 10px;
 }
 
+
 .team-list-person-position {
   margin-bottom: 30px;
+  color: var(--second-color)
 }
 
 .team-list-person {
@@ -247,20 +261,15 @@ h6 {
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
   margin-top: 50px;
   margin-bottom: 94px;
- }
+}
 
-.portfolio-list-items {
-  border-color: var(--border-color);
-  border-width: 1px;
-  border-style: solid;
-  box-sizing: border-box;
-  margin: 15px;
-  width: 370px;
-  height: 404px;
+.portfolio-list-item {
+  display: block;
 }
 
 .button-list-item {
@@ -268,12 +277,21 @@ h6 {
   font-weight: var(--font-weight-bold);
   font-size: 16px;
   padding: 12px 22px;
-  margin: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   cursor: pointer;
+
+}
+
+.portfolio-list-item-text {
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
 }
 
 .button-list-item:hover,
@@ -307,7 +325,7 @@ h6 {
   margin-bottom: 9px;
 }
 
-.portfolio-list-item-description{
+.portfolio-list-item-description {
   font-weight: 700;
   margin-top: 20px;
 }
@@ -323,14 +341,14 @@ h6 {
 }
 
 .footer .container {
-  padding: 60px 15px 0 15px;
+  padding: 60px 15px;
 }
 
-.footer{
+.footer {
   background-color: var(--dark-color);
-  width: 1600px;
-  height: 252px;
+  width: 100%;
 }
+
 .footer-logo-accent {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -338,12 +356,13 @@ h6 {
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-family: var(--secondary-font);
 }
 
 .footer-address-mail {
   text-decoration: none;
   color: var(--second-color);
- }
+}
 
 .footer-address-tel {
   text-decoration: none;
