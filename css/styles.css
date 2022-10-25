@@ -46,10 +46,14 @@ h6 {
   /* padding: 0 15px; */
 }
 
+.header {
+  padding: 24px 0;
+  border-bottom: 32px;
+}
+
 .header .container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-nav,
@@ -65,7 +69,8 @@ h6 {
 .header-nav,
 .address,
 .button-list,
-.portfolio-list {
+.portfolio-list,
+.footer-address-element {
   list-style: none;
 }
 
@@ -143,14 +148,12 @@ h6 {
   font-size: 44px;
   display: flex;
   justify-content: center;
-  line-height: 1.36;
+  line-height: 1.875;
   padding-top: 200px;
   align-items: center;
   text-align: center;
   margin: auto;
   padding: 200px 252px 0;
-  /* margin-bottom: 280px; */
-
 }
 
 .hero-h1-button {
@@ -185,7 +188,9 @@ h6 {
 
 .advantages-list-item-header {
   font-weight: 700;
-  font-style: var(--main-font)
+  font-style: var(--main-font);
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .advanteges-list-item-description {
@@ -233,12 +238,14 @@ h6 {
   display: flex;
   justify-content: center;
   padding-bottom: 94px;
+  gap: 30px;
 }
 
 .button-list {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  gap: 8px;
 }
 
 .team-list-person-name {
@@ -254,7 +261,6 @@ h6 {
 }
 
 .team-list-person {
-  margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -270,6 +276,7 @@ h6 {
 
 .portfolio-list-item {
   display: block;
+  flex-basis: auto;
 }
 
 .button-list-item {
@@ -277,14 +284,11 @@ h6 {
   font-weight: var(--font-weight-bold);
   font-size: 16px;
   padding: 12px 22px;
-  margin-left: 4px;
-  margin-right: 4px;
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   cursor: pointer;
-
 }
 
 .portfolio-list-item-text {
